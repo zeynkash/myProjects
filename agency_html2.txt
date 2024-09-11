@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Creative Spark Agency</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+   	    font-family: 'Bebas Neue', sans-serif;
+            line-height: 1;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem; <!-- rem = 16px -->
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .hero {
+            background-image: url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #f4511e;
+            color: #fff;
+            padding: 0.7rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+        }
+        .services {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .service-item {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        .service-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creative Spark </h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ignite Your Brand</h1>
+            <p>We bring your ideas to life with creative solutions</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="https://live.staticflickr.com/65535/53978933907_5ba27e9962.jpg" alt="Web Design">
+                <h3>Web Design</h3>
+                <p>Creating beautiful, responsive websites tailored to your needs.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://live.staticflickr.com/65535/53980064693_3cf81e6fff.jpg" alt="Branding">
+                <h3>Branding</h3>
+                <p>Developing unique brand identities that stand out in the market.</p>
+            </div>
+            <div class="service-item">
+                <img src="https://live.staticflickr.com/65535/53978929467_ab497836bb.jpg">
+                <h3>Digital Marketing</h3>
+                <p>Boosting your online presence with targeted marketing strategies.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Creative Spark Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
